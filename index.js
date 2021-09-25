@@ -8,7 +8,7 @@ function submitUsername() {
     username = inputUsernameElement.value
 
     if(!username) {
-        alert("no username to fetch")
+        alert("no username to fetch.")
 
         return
     }
