@@ -1,0 +1,21 @@
+.username {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.controlpanel {
+    background-color: #ddd;
+    padding: 5px;
+}
+
+.submitbutton {
+    font-size: 25px;
+    color: #070;
+}
+
+.blobdiv {
+    background-color: #ffd;
+    padding: 5px;
+    color: #007;
+    font-family: monospace;
+}
