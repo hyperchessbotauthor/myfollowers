@@ -3,6 +3,15 @@ let inputUsernameElement = document.getElementById("username")
 let blobDivElement = document.getElementById("blobdiv")
 
 submitUsernameElement.addEventListener("click", submitUsername)
+inputUsernameElement.addEventListener("keydown", usernameKeyDown)
+
+function usernameKeyDown(ev) {
+    const keyCode = ev.keyCode
+
+    if(keyCode == 13) {
+        submitUsername()
+    }
+}
 
 function submitUsername() {
     username = inputUsernameElement.value
@@ -12,6 +21,8 @@ function submitUsername() {
 
         return
     }
+
+    inputUsernameElement.value = ""
 
     console.log(`getting ${username}`)
 
